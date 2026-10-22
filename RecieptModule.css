@@ -1,0 +1,161 @@
+/* src/components/Receipt/ReceiptModule.css */
+.receipt-module {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--green-extra-light) 0%, var(--green-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.receipt-card {
+  max-width: 600px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.receipt-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-icon {
+  font-size: 60px;
+  color: var(--green-primary);
+}
+
+.receipt-header h2 {
+  color: var(--green-primary);
+  font-size: 28px;
+}
+
+.status-badge {
+  padding: 10px 20px;
+  border-radius: 40px;
+  color: white;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  background: var(--green-primary);
+}
+
+.receipt-preview {
+  background: var(--green-extra-light);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 2px dashed var(--green-light);
+}
+
+.preview-header {
+  text-align: center;
+  border-bottom: 2px solid var(--green-light);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.govt-logo {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.preview-header h3 {
+  color: var(--green-primary);
+  font-size: 20px;
+}
+
+.receipt-details {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--green-light);
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.items-table th {
+  background: var(--green-light);
+  color: var(--dark-green);
+  padding: 10px;
+  text-align: left;
+}
+
+.items-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--green-light);
+}
+
+.receipt-total {
+  background: var(--green-extra-light);
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.total-line.grand {
+  color: var(--green-primary);
+  font-weight: 700;
+}
+
+.receipt-actions {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn-download, .btn-status, .btn-new {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-download {
+  background: linear-gradient(135deg, var(--green-primary), var(--green-secondary));
+  color: white;
+}
+.btn-status {
+  background: var(--green-extra-light);
+  color: var(--green-primary);
+  border: 2px solid var(--green-light);
+}
+.btn-new {
+  background: var(--green-extra-light);
+  color: var(--green-primary);
+  border: 2px solid var(--green-light);
+}
+
+.btn-download:hover, .btn-status:hover, .btn-new:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.receipt-note {
+  background: var(--green-extra-light);
+  padding: 15px;
+  border-radius: 12px;
+  color: var(--green-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,165 @@
+/* src/components/Status/TransactionStatus.css */
+.status-module {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--green-extra-light) 0%, var(--green-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.status-card {
+  max-width: 700px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.status-card h2 {
+  color: var(--green-primary);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.status-header {
+  background: var(--green-extra-light);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid var(--green-light);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge-large {
+  padding: 12px 24px;
+  border-radius: 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-primary);
+}
+
+.transaction-id {
+  color: #666;
+  font-family: monospace;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  background: var(--green-extra-light);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 12px;
+  color: #666;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--green-primary);
+}
+
+.bill-section {
+  background: var(--green-extra-light);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+.bill-section h3 {
+  color: var(--green-primary);
+  margin-bottom: 15px;
+}
+
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bill-table th {
+  background: var(--green-light);
+  color: var(--dark-green);
+  padding: 10px;
+  text-align: left;
+}
+
+.bill-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--green-light);
+}
+
+.monthly-status {
+  background: var(--green-extra-light);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.eligible {
+  color: var(--green-primary);
+  font-weight: 500;
+}
+.not-eligible {
+  color: #b45309;
+}
+
+.status-actions {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.btn-home, .btn-new-purchase {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-home {
+  background: var(--green-extra-light);
+  color: var(--green-primary);
+  border: 2px solid var(--green-light);
+}
+.btn-new-purchase {
+  background: linear-gradient(135deg, var(--green-primary), var(--green-secondary));
+  color: white;
+}
+
+.btn-home:hover, .btn-new-purchase:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.status-note {
+  background: var(--green-extra-light);
+  padding: 15px;
+  border-radius: 12px;
+  color: var(--green-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
